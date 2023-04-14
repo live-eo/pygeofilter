@@ -1,13 +1,14 @@
 django
 geoalchemy2
-sqlalchemy<2.0.0
+sqlalchemy
 geopandas
 fiona
 pyproj
 rtree
 pygml
 dateparser
-pygeoif==0.7
+pygeoif
 lark
 elasticsearch
 elasticsearch-dsl
+gdal
