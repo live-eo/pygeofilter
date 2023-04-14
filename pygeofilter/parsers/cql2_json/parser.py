@@ -130,8 +130,8 @@ def walk_cql_json(node: JsonType):  # noqa: C901
         elif op == "between":
             return ast.Between(
                 cast(ast.Node, walk_cql_json(args[0])),
-                cast(ast.ScalarAstType, walk_cql_json(args[1][0])),
-                cast(ast.ScalarAstType, walk_cql_json(args[1][1])),
+                cast(ast.ScalarAstType, walk_cql_json(args[1])),
+                cast(ast.ScalarAstType, walk_cql_json(args[2])),
                 not_=False,
             )
 
