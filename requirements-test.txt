@@ -11,4 +11,3 @@ pygeoif
 lark
 elasticsearch
 elasticsearch-dsl
-gdal
