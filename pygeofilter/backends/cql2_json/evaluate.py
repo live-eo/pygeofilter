@@ -67,7 +67,7 @@ class CQL2Evaluator(Evaluator):
 
     @handle(ast.Between)
     def between(self, node, lhs, low, high):
-        return {"op": "between", "args": [lhs, [low, high]]}
+        return {"op": "between", "args": [lhs, low, high]}
 
     @handle(ast.Like)
     def like(self, node, *subargs):

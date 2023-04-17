@@ -82,7 +82,7 @@ def test_attribute_gte_literal():
 
 
 def test_attribute_between():
-    result = parse({"op": "between", "args": [{"property": "attr"}, [2, 5]]})
+    result = parse({"op": "between", "args": [{"property": "attr"}, 2, 5]})
     assert result == ast.Between(
         ast.Attribute("attr"),
         2,
@@ -92,7 +92,7 @@ def test_attribute_between():
 
 
 def test_attribute_between_negative_positive():
-    result = parse({"op": "between", "args": [{"property": "attr"}, [-1, 1]]})
+    result = parse({"op": "between", "args": [{"property": "attr"}, -1, 1]})
     assert result == ast.Between(
         ast.Attribute("attr"),
         -1,
